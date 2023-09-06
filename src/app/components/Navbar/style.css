@@ -1,0 +1,8 @@
+.navbar-main {
+    position: fixed;
+  
+}
+.masthead-content-right {
+    display: flex;
+    justify-content: flex-end;
+  }
