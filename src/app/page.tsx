@@ -8,6 +8,7 @@ import {
   Grid,
   GridItem,
 } from "@patternfly/react-core";
+import Count from "./components/Count/Count";
 export default function Home() {
   return (
     <>
@@ -20,8 +21,10 @@ export default function Home() {
           SPAship is an open source platform for deploying, integrating, and
           managing single-page apps (SPAs).
         </h2>
+        <br />
+        <Count />
         <h2 className="features-heading">Key Features of SPAship</h2>
-        <Grid style={{ margin: "0px 200px 200px 200px" }}>
+        <Grid style={{ margin: "0% 11% 11% 11%" }}>
           <GridItem span={4}>
             <div className="flip-card">
               <div className="flip-card-inner">
@@ -196,9 +199,9 @@ export default function Home() {
         </Grid>
 
         <h2 className="comparison-heading">Supported SPA Deployments</h2>
-        <Grid style={{ margin: "0px 200px 50px 200px" }}>
+        <Grid style={{ margin: "5% 11% 3% 11%" }}>
           <GridItem span={8}>
-            <Card isRounded ouiaId="BasicCard" className="custom-card">
+            <Card isRounded isFullHeight ouiaId="BasicCard">
               <CardTitle
                 style={{
                   color: "black",
@@ -308,7 +311,7 @@ export default function Home() {
             </Card>
           </GridItem>
           <GridItem span={4}>
-            <Card isRounded ouiaId="BasicCard" style={{ height: "405px" }}>
+            <Card isRounded isFullHeight ouiaId="BasicCard">
               <CardTitle></CardTitle>
               <CardBody>
                 <img
@@ -320,10 +323,15 @@ export default function Home() {
             </Card>
           </GridItem>
         </Grid>
-        <Grid style={{ margin: "0px 200px 100px 200px" }}>
+        <Grid style={{ margin: "0% 11% 11% 11%" }}>
           <GridItem span={4}>
-            <Card isRounded ouiaId="BasicCard" className="custom-card">
-              <CardBody style={{ height: "524px" }}>
+            <Card
+              isRounded
+              isFullHeight
+              ouiaId="BasicCard"
+              className="custom-card"
+            >
+              <CardBody>
                 <img
                   src="img/delivery-completed.gif"
                   alt=""
@@ -333,7 +341,12 @@ export default function Home() {
             </Card>
           </GridItem>
           <GridItem span={8}>
-            <Card isRounded ouiaId="BasicCard" className="custom-card">
+            <Card
+              isRounded
+              isFullHeight
+              ouiaId="BasicCard"
+              className="custom-card"
+            >
               <CardTitle
                 style={{
                   color: "black",

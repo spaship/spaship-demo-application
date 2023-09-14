@@ -1,6 +1,6 @@
 .welcome {
     /* display: flex; */
-    padding: 50px;
+    padding: 3%;
     align-items: center;
     justify-content: center;
     min-height: 86.5vh;
@@ -9,7 +9,8 @@
   
   .welcome-title {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 5%;
+    font-weight: 400;
   }
   
   .welcome-text {
@@ -24,23 +25,21 @@
   .introduction-text{
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 200px;
+    margin-bottom: 10%;
   }
 .features-heading{
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  /* margin-top: 100px; */
+  margin-bottom: 4%;
 }
 
 .comparison-heading{
   text-align: left;
   font-size:2rem;
-  font-weight: bolder;
-  margin-top:200px;
-  margin-bottom: 50px;
-  margin-left: 222px;
+  font-weight: 800!important;
+  margin: 11% 11% 4% 11%;
   
 }
   .custom-feature{
