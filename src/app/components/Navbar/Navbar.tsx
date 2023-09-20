@@ -25,7 +25,6 @@ export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const onToggleClick = () => {
-    console.log("in toggle", isOpen);
     setIsOpen(!isOpen);
   };
 
@@ -33,8 +32,6 @@ export function Navbar() {
     _event: React.MouseEvent<Element, MouseEvent> | undefined,
     value: string | number | undefined
   ) => {
-    // eslint-disable-next-line no-console
-    console.log("selected", value);
     setIsOpen(false);
   };
   return (

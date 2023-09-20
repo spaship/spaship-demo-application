@@ -11,19 +11,24 @@ import {
 } from "@patternfly/react-core";
 import React, { useState, useEffect } from "react";
 
+type Data = {
+  deploymentCount: string;
+  timeSavedInHours: string;
+  averageTime: string;
+};
 function Count() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState<Data>();
 
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://spaship.dev.redhat.com/api/v1/analytics/deployment/time-saved?averageDeploymentTimeInSecs=1800"
+          process.env.NEXT_PUBLIC_SPASHIP_API_BASE_URL +
+            "/analytics/deployment/time-saved?averageDeploymentTimeInSecs=1800"
         );
+
         const result = await response.json();
-        console.log("full data: ", result);
-        console.log("resultdata", result.data);
-        console.log("deployment count", result.data.deploymentCount);
+
         setData(result.data);
       } catch (error) {
         console.error("Error fetching data:", error);
