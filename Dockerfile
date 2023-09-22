@@ -10,6 +10,7 @@ FROM docker.io/library/node:16.10-alpine
 WORKDIR /app
 
 ARG NEXT_PUBLIC_SPASHIP_API_BASE_URL 
+ARG NEXT_PUBLIC_VERSION
 # Copy package.json and package-lock.json
 COPY package.json ./
 COPY package-lock.json ./

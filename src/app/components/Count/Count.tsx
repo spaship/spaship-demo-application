@@ -41,7 +41,7 @@ function Count() {
   return (
     <>
       <Grid style={{ margin: "0% 11% 11% 11%" }}>
-        <GridItem span={4} style={{ margin: " 0px 30px" }}>
+        <GridItem span={4} style={{ height: "15%", margin: " 0% 10%" }}>
           <Card className="pf-u-p-lg">
             <Split>
               <SplitItem>
@@ -49,6 +49,7 @@ function Count() {
                   src="/img/rocket-launch.gif"
                   style={{
                     margin: "10% 0% 0% 30%",
+                    padding: "5%",
                     width: "100px",
                     height: "100px",
                   }}
@@ -81,7 +82,7 @@ function Count() {
             {/* </div> */}
           </Card>
         </GridItem>
-        <GridItem span={4} style={{ margin: " 0px 30px" }}>
+        <GridItem span={4} style={{ height: "15%", margin: " 0% 10%" }}>
           <Card className="pf-u-p-lg">
             <Split>
               <SplitItem>
@@ -121,7 +122,7 @@ function Count() {
             {/* </div> */}
           </Card>
         </GridItem>
-        <GridItem span={4} style={{ margin: " 0px 30px" }}>
+        <GridItem span={4} style={{ height: "15%", margin: " 0% 10%" }}>
           <Card className="pf-u-p-lg">
             <Split>
               <SplitItem>
