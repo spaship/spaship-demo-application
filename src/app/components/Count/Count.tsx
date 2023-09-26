@@ -20,6 +20,11 @@ function Count() {
   const [data, setData] = useState<Data>();
 
   useEffect(() => {
+    console.log(
+      "inside use effect",
+      process.env.NEXT_PUBLIC_SPASHIP_API_BASE_URL +
+        "/analytics/deployment/time-saved?averageDeploymentTimeInSecs=1800"
+    );
     async function fetchData() {
       try {
         const response = await fetch(
