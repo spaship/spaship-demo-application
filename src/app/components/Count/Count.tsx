@@ -42,7 +42,11 @@ function Count() {
 
     fetchData();
   }, []);
-
+  console.log(
+    "inside count",
+    process.env.NEXT_PUBLIC_SPASHIP_API_BASE_URL +
+      "/analytics/deployment/time-saved?averageDeploymentTimeInSecs=1800"
+  );
   return (
     <>
       <Grid style={{ margin: "0% 11% 11% 11%" }}>
