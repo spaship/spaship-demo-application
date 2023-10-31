@@ -73,7 +73,8 @@ function Count() {
                     display: "flex",
                   }}
                 >
-                  {data?.deploymentCount}
+                  {/* {data?.deploymentCount} */}
+                  11941
                 </p>
               </SplitItem>
             </Split>
@@ -113,7 +114,8 @@ function Count() {
                     display: "flex",
                   }}
                 >
-                  {data?.timeSavedInHours}
+                  {/* {data?.timeSavedInHours} */}
+                  5713
                 </p>
               </SplitItem>
             </Split>
@@ -153,7 +155,8 @@ function Count() {
                     display: "flex",
                   }}
                 >
-                  {data?.averageTime}
+                  {/* {data?.averageTime} */}
+                  10.88s
                 </p>
               </SplitItem>
             </Split>
